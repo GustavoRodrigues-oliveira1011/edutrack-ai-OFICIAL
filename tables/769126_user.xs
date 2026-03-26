@@ -10,9 +10,7 @@ table user {
   
     text name filters=trim
     email? email filters=trim|lower
-    password? password filters=min:8|minAlpha:1|minDigit:1 {
-      visibility = "internal"
-    }
+    password? password filters=min:8|minAlpha:1|minDigit:1
   }
 
   index = [
