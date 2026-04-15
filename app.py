@@ -1,26 +1,29 @@
 import streamlit as st
 
-# Configuração da Página
-st.set_page_config(page_title="EduTrack AI", page_icon="🎓")
+# Configuração principal da página (Aba do navegador)
+st.set_page_config(
+    page_title="EduTrack - Home",
+    page_icon="🏠",
+    layout="wide"
+)
 
-# Título Principal
-st.title("🎓 EduTrack AI")
+st.title("🏠 Bem-vindo ao EduTrack!")
+st.markdown("---")
 
-# Sidebar (Menu Lateral)
-st.sidebar.header("Menu")
-menu_option = st.sidebar.radio("Navegar", ["Dashboard", "Disciplinas", "Tarefas"])
+st.write("Este é o seu Dashboard principal. Use o menu lateral para navegar entre as páginas do aplicativo.")
 
-# Conteúdo Dinâmico
-if menu_option == "Dashboard":
-    st.write("Bem-vindo ao seu assistente acadêmico!")
-    st.info("Conecte ao Xano para ver seus dados reais.")
-    # Exemplo de Métrica Visual
-    col1, col2 = st.columns(2)
-    col1.metric("Disciplinas Ativas", "0")
-    col2.metric("Tarefas Pendentes", "0")
-elif menu_option == "Disciplinas":
-    st.subheader("Minhas Disciplinas")
-    st.write("Aqui listaremos as matérias cadastradas no backend.")
-elif menu_option == "Tarefas":
-    st.subheader("Gerenciamento de Tarefas")
-    st.checkbox("Exemplo: Estudar Streamlit")
+# Um pequeno exemplo de como um Dashboard ficaria
+st.subheader("Resumo Rápido")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.metric(label="Disciplinas Cadastradas", value="2") # Valores fixos (Mockup) por enquanto
+    
+with col2:
+    st.metric(label="Tarefas Pendentes", value="1")
+    
+with col3:
+    st.metric(label="Tarefas Concluídas", value="5")
+
+st.markdown("---")
+st.info("👈 Selecione **Disciplinas** ou **Tarefas** no menu à esquerda para começar a gerenciar seus estudos!")
