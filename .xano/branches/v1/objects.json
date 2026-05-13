@@ -75,7 +75,7 @@
     "id": 2950920,
     "type": "api_endpoint",
     "path": "apis/authentication/2950920_auth_me_GET.xs",
-    "status": "unchanged",
+    "status": "changed",
     "staged": false,
     "sha256": "14e81335c0285e545c82cd888c42ef1f2007039d73133f00a5c3f5857556f8ea",
     "original": "Ly8gR2V0IHRoZSB1c2VyIHJlY29yZCBiZWxvbmdpbmcgdG8gdGhlIGF1dGhlbnRpY2F0aW9uIHRva2VuCnF1ZXJ5ICJhdXRoL21lIiB2ZXJiPUdFVCB7CiAgYXBpX2dyb3VwID0gIkF1dGhlbnRpY2F0aW9uIgoKICBpbnB1dCB7CiAgfQoKICBzdGFjayB7CiAgICBkYi5nZXQgIiIgewogICAgICBmaWVsZF9uYW1lID0gImlkIgogICAgICBmaWVsZF92YWx1ZSA9ICRhdXRoLmlkCiAgICAgIG91dHB1dCA9IFsiaWQiLCAiY3JlYXRlZF9hdCIsICJuYW1lIiwgImVtYWlsIl0KICAgIH0gYXMgJHVzZXIKICB9CgogIHJlc3BvbnNlID0gJHVzZXIKfQ=="
@@ -93,7 +93,7 @@
     "id": 769126,
     "type": "table",
     "path": "tables/769126_user.xs",
-    "status": "unchanged",
+    "status": "changed",
     "staged": false,
     "sha256": "25aac86fbb9bdad1a457fcfc70af531b24b2542faee63b8d14938e742026d02f",
     "original": "Ly8gU3RvcmVzIHVzZXIgYWNjb3VudCBpbmZvcm1hdGlvbgp0YWJsZSB1c2VyIHsKICBhdXRoID0gdHJ1ZQoKICBzY2hlbWEgewogICAgaW50IGlkCiAgICB0aW1lc3RhbXAgY3JlYXRlZF9hdD89bm93IHsKICAgICAgdmlzaWJpbGl0eSA9ICJwcml2YXRlIgogICAgfQogIAogICAgdGV4dCBuYW1lIGZpbHRlcnM9dHJpbQogICAgZW1haWw/IGVtYWlsIGZpbHRlcnM9dHJpbXxsb3dlcgogICAgcGFzc3dvcmQ/IHBhc3N3b3JkIGZpbHRlcnM9bWluOjh8bWluQWxwaGE6MXxtaW5EaWdpdDoxCiAgfQoKICBpbmRleCA9IFsKICAgIHt0eXBlOiAicHJpbWFyeSIsIGZpZWxkOiBbe25hbWU6ICJpZCJ9XX0KICAgIHt0eXBlOiAiZ2luIiwgZmllbGQ6IFt7bmFtZTogInhkbyIsIG9wOiAianNvbmJfcGF0aF9vcCJ9XX0KICAgIHt0eXBlOiAiYnRyZWUiLCBmaWVsZDogW3tuYW1lOiAiY3JlYXRlZF9hdCIsIG9wOiAiZGVzYyJ9XX0KICAgIHt0eXBlOiAiYnRyZWV8dW5pcXVlIiwgZmllbGQ6IFt7bmFtZTogImVtYWlsIiwgb3A6ICJhc2MifV19CiAgXQp9"
@@ -101,7 +101,7 @@
   {
     "id": 794022,
     "path": "tables/100001_subject.xs",
-    "status": "unchanged",
+    "status": "changed",
     "type": "table",
     "staged": false,
     "sha256": "5503ce2a78e4fb0c87ba37c58563346d103bc22378e20fc1ccce5542bb78cafe",
@@ -119,7 +119,7 @@
   {
     "id": 3755300,
     "path": "apis/subjects/4000001_subjects_POST.xs",
-    "status": "unchanged",
+    "status": "changed",
     "type": "api_endpoint",
     "staged": false,
     "sha256": "bcdfdb7207e95fb4a34b43bdbe55bcb60a57acfc340781fd31c8782f5aa811a5",
@@ -128,7 +128,7 @@
   {
     "id": 3755301,
     "path": "apis/subjects/4000002_subjects_GET.xs",
-    "status": "unchanged",
+    "status": "changed",
     "type": "api_endpoint",
     "staged": false,
     "sha256": "5f0906863f7d26e2c8ae6dbd6620b5dc8f2c8baa8acfbd80a08f5cae8e8ef61a",
@@ -146,7 +146,7 @@
   {
     "id": 3755302,
     "path": "apis/subjects/4000004_subjects_id_PUT.xs",
-    "status": "unchanged",
+    "status": "changed",
     "type": "api_endpoint",
     "staged": false,
     "sha256": "1e3bcda1e977717c1758704c53b2073f5bf37c1cf88092b818e32445b18c1105",
