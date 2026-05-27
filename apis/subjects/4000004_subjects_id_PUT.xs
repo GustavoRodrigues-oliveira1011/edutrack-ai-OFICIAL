@@ -9,6 +9,16 @@ query "subjects/{id}" verb=PUT {
   }
 
   stack {
+    db.get "subject" {
+      field_name = "id"
+      field_value = $input.id
+    } as $subject
+
+    precondition ($subject != null && $subject.user_id == $auth.id) {
+      error_type = "notfound"
+      error = "Subject Not Found."
+    }
+
     db.edit subject {
       field_name = "id"
       field_value = $input.id

@@ -12,7 +12,7 @@ query "subjects/{id}" verb=GET {
       field_value = $input.id
     } as $subject
 
-    precondition ($subject != null) {
+    precondition ($subject != null && $subject.user_id == $auth.id) {
       error_type = "notfound"
       error = "Subject Not Found."
     }

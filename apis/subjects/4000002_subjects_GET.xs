@@ -7,6 +7,7 @@ query subjects verb=GET {
 
   stack {
     db.query subject {
+      where = $db.subject.user_id == $auth.id
       return = {type: "list"}
     } as $all_data
   }

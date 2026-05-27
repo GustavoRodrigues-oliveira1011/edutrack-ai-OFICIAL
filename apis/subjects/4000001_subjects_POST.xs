@@ -5,7 +5,6 @@ query subjects verb=POST {
     text name
     text description
     text teacher
-    int user_id
   }
 
   stack {
@@ -14,7 +13,7 @@ query subjects verb=POST {
         name       : $input.name
         description: $input.description
         teacher    : $input.teacher
-        user_id    : $input.user_id
+        user_id    : $auth.id
       }
     } as $new_subject
   }
