@@ -8,7 +8,7 @@ query "auth/login" verb=POST {
   }
 
   stack {
-    db.get "" {
+    db.get user {
       field_name = "email"
       field_value = $input.email
       output = ["id", "created_at", "name", "email", "password"]
@@ -30,7 +30,7 @@ query "auth/login" verb=POST {
     }
   
     security.create_auth_token {
-      table = ""
+      table = "user"
       extras = {}
       expiration = 86400
       id = $user.id
