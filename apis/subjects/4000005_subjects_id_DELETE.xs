@@ -7,6 +7,16 @@ query "subjects/{id}" verb=DELETE {
   }
 
   stack {
+    db.get "subject" {
+      field_name = "id"
+      field_value = $input.id
+    } as $subject
+
+    precondition ($subject != null && $subject.user_id == $auth.id) {
+      error_type = "notfound"
+      error = "Subject Not Found."
+    }
+
     db.del "subject" {
       field_name = "id"
       field_value = $input.id
