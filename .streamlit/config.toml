@@ -1,0 +1,14 @@
+[theme]
+# Vermelho EduTrack original
+primaryColor = "#E63946"
+
+# Fundo principal escuro e elegante
+backgroundColor = "#0E1117"
+
+# Fundo secundário (Barra lateral)
+secondaryBackgroundColor = "#161B22"
+
+# Cor do texto principal
+textColor = "#FAFAFA"
+
+font = "sans serif"
